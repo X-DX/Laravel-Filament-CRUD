@@ -42,20 +42,20 @@ Additionally, this project highlights how to implement modals for create, view, 
 - install fialment4 i.e "composer require filament/filament:"^4.0""  
 - install fialment panels i.e "php artisan filament:install --panels" 
 /*** 
-- This command installs the Filament Admin Panel package into your Laravel project.
-- Filament is a modern admin panel framework for Laravel (similar to Nova or Backpack), used to quickly build dashboards, CRUDs, and forms.
+This command installs the Filament Admin Panel package into your Laravel project.
+Filament is a modern admin panel framework for Laravel (similar to Nova or Backpack), used to quickly build dashboards, CRUDs, and forms.
 When you run above command, it does the following things automatically:
-- Publishes configuration files: Creates a config/filament.php or config/filament/{panel}.php file. This file stores settings like your admin path, colors, authentication guard, etc.
-- Creates a default “Panel”: In Filament v3, everything (Admin panel, Customer panel, etc.) is defined as a Panel.It generates a panel under app/Providers/Filament/AdminPanelProvider.php.
-- Sets up Filament routes: Adds routes for your panel in routes/filament.php (or automatically through the service provider)
-- Installs assets: Sets up TailwindCSS, Alpine.js, and other Filament UI dependencies. Makes sure your vite.config.js and resources/css/app.css are configured properly.
+Publishes configuration files: Creates a config/filament.php or config/filament/{panel}.php file. This file stores settings like your admin path, colors, authentication guard, etc.
+Creates a default “Panel”: In Filament v3, everything (Admin panel, Customer panel, etc.) is defined as a Panel.It generates a panel under app/Providers/Filament/AdminPanelProvider.php.
+Sets up Filament routes: Adds routes for your panel in routes/filament.php (or automatically through the service provider.
+Installs assets: Sets up TailwindCSS, Alpine.js, and other Filament UI dependencies. Makes sure your vite.config.js and resources/css/app.css are configured properly.
 ***/
 
 - php artisan make:filament-user
 /***
-- This command creates a new user account for logging into your Filament Admin Panel.
-- Then it saves the new user in your users table (the one used by your Filament panel guard).
-- After creating a Filament user, you can log into your admin panel.
+This command creates a new user account for logging into your Filament Admin Panel.
+Then it saves the new user in your users table (the one used by your Filament panel guard).
+After creating a Filament user, you can log into your admin panel.
 ***/
 
 - In App/Filament/AdminPanelProvider you can change: colour, sidebar tollgle, logo, etc
