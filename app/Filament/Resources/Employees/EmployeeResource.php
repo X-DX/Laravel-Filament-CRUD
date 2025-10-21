@@ -4,6 +4,7 @@ namespace App\Filament\Resources\Employees;
 
 use App\Filament\Resources\Employees\Pages\CreateEmployee;
 use App\Filament\Resources\Employees\Pages\EditEmployee;
+use App\Filament\Resources\Employees\Pages\ViewEmployee;
 use App\Filament\Resources\Employees\Pages\ListEmployees;
 use App\Filament\Resources\Employees\Schemas\EmployeeForm;
 use App\Filament\Resources\Employees\Tables\EmployeesTable;
@@ -17,6 +18,8 @@ use Filament\Tables\Table;
 class EmployeeResource extends Resource
 {
     protected static ?string $model = Employee::class;
+
+    protected static ?string $navigationLabel = 'All Employees';
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::User;
 
@@ -41,8 +44,9 @@ class EmployeeResource extends Resource
     {
         return [
             'index' => ListEmployees::route('/'),
-            'create' => CreateEmployee::route('/create'),
-            'edit' => EditEmployee::route('/{record}/edit'),
+            // 'create' => CreateEmployee::route('/create'),
+            // 'edit' => EditEmployee::route('/{record}/edit'),
+            // 'view' => ViewEmployee::route('/{record}'),
         ];
     }
 }

@@ -74,3 +74,9 @@ Additionally, this project highlights how to implement modals for create, view, 
 - Custom redirect page:
     - By default, after saving the form, the user will be redirected to the Edit page of the resource, or the View page if it is present.
     - You may set up a custom redirect when the form is saved by overriding the getRedirectUrl() method on the Create page class.
+- In Tables: EmployeesTable.php : add Delete Icon 
+- Creates a new “View Record” page under your Resource. "php artisan make:filament-page ViewEmployee --resource=EmployeeResource --type=ViewRecord" and remember we have to register this in "Employee Resource file"
+- Do form validation rules in Schemas: EmployeeForm.php 
+- Search, sorting and pagination 
+- multi delete functionality
+- customize nevigation label, title and heading
