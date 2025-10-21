@@ -6,13 +6,13 @@ The video demonstrates practical usage of Laravel migrations to define database 
 Additionally, this project highlights how to implement modals for create, view, and edit operations, improving the user experience by avoiding page reloads. Here i tried to demonstrates how to customize the admin panel’s appearance by changing colors, sidebar behavior, logos, and layout, along with customizing navigation labels and page titles to make the application more personalized. 
 
 ### Highlights
-🛠️ Step-by-step setup of Laravel 12 and Filament 4 for building an admin panel
-👥 Complete employee CRUD functionality with bulk delete, search, sorting, and pagination
-🔐 Implementation of form validations for fields like email uniqueness, phone number format, and salary limits
-🎨 Customization of admin panel UI including sidebar collapsibility, color theme, and logo integration
-🗂️ Efficient use of Laravel migrations and Filament resources to manage database and UI components
-💡 Use of modals for create, view, and edit actions to enhance user experience without page reloads
-🚀 Redirect customization after create and update actions to improve navigation flow
+🛠️ Step-by-step setup of Laravel 12 and Filament 4 for building an admin panel.
+👥 Complete employee CRUD functionality with bulk delete, search, sorting, and pagination.
+🔐 Implementation of form validations for fields like email uniqueness, phone number format, and salary limits.
+🎨 Customization of admin panel UI including sidebar collapsibility, color theme, and logo integration.
+🗂️ Efficient use of Laravel migrations and Filament resources to manage database and UI components.
+💡 Use of modals for create, view, and edit actions to enhance user experience without page reloads.
+🚀 Redirect customization after create and update actions to improve navigation flow.
 
 ### Key Insights
 ⚙️ Laravel 12 and Filament 4 Integration: It showcases how Laravel 12’s modern backend capabilities paired with Filament 4’s powerful admin panel builder can rapidly accelerate the development of CRUD applications. Filament provides a standardized way to define forms, tables, and resources, reducing boilerplate and enhancing developer productivity.
